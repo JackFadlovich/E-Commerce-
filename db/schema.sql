@@ -16,10 +16,14 @@ CREATE TABLE user_information (
 
 CREATE TABLE seller (
     seller_ID SERIAL PRIMARY KEY,
+    FOREIGN KEY (user_ID)
+    REFERENCES user_information (user_ID)
 );
 
 CREATE TABLE buyer (
     buyer_ID SERIAL PRIMARY KEY,
+    FOREIGN KEY (user_ID)
+    REFERENCES user_information (user_ID)
 );
 
 CREATE TABLE product_information (
@@ -32,8 +36,12 @@ CREATE TABLE product_information (
     product_rating INTEGER
 );
 
+
+
 CREATE TABLE orders (
     order SERIAL PRIMARY KEY,
-    shipping_information VARCHAR(50) NOT NULL,    
+    shipping_information VARCHAR(50) NOT NULL, 
+    FOREIGN KEY (buyer_ID)
+    REFERENCES buyer (buyer_ID)   
 );
 
