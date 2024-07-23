@@ -1,9 +1,10 @@
 const Sequelize = require('sequelize');
+require('dotenv').config();
 
 const sequelize = new Sequelize(
-'commerce_db',    
-'USER',
-'PASSWORD',
+process.env.DB_NAME,    
+process.env.DB_USER,
+process.env.DB_PASSWORD,
 
 {
     host: 'localhost',
