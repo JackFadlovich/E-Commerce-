@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Macbook Pro",
+        "category": "Electronics",
+        "description": "2017 Macbook Pro refurbished and is in good working condition.",
+        "price": 700,
+        "manufacturer": "Apple",
+        "productRating": 5
+    },
+    {
+        "name": "2-Ton Hydraulic Bottle",
+        "category": "Car",
+        "description": "Brand new bottle jack capable of lifting 4000lbs",
+        "price": 10,
+        "manufacturer": "Torin",
+        "productRating": 4
+    },
+    {
+        "name": "Coffee Table",
+        "category": "Home",
+        "description": "Beautiful glass-top coffee table with gold accents",
+        "price": 300,
+        "manufacturer": "HomeGoods",
+        "productRating": 2
+    },
+    {
+        "name": "Dyson Hair Dryer",
+        "category": "Personal Care",
+        "description": "Fairly used Dyson blow dryer. All attachments included.",
+        "price": 350,
+        "manufacturer": "Dyson",
+        "productRating": 4
+    },
+    {
+        "name":"Skull Shaver",
+        "category": "Personal Care",
+        "description": "Brand New/Never Used hair shaver for men.",
+        "price": 75,
+        "manufacturer": "Skull Shaver",
+        "productRating": 2
+    }
+
+]
