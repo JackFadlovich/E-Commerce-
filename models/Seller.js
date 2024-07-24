@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('./config/connection');
 
-class Buyer extends Model {}
+class Seller extends Model {}
 
-Buyer.init(
+Seller.init(
     {
-        buyer_id: {
+        seller_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
@@ -22,8 +22,8 @@ Buyer.init(
     },
     {
         sequelize,
-        modelName: 'buyerinfo'
+        modelName: 'seller'
     }
 );
 
-module.exports = BuyerInfo;
+module.exports = Seller;
