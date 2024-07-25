@@ -16,7 +16,7 @@ User.hasMany(Seller, {
     foreignKey: 'user_id',
 });
 
-Buyer.belongsTo(Seller, {
+Seller.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
