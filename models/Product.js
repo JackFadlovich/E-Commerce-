@@ -35,13 +35,13 @@ Product.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        seller_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'seller',
-                key: 'id',
-            },
-        },
+        // seller_id: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //         model: 'seller',
+        //         key: 'id',
+        //     },
+        // },
     },
     {
         sequelize,
