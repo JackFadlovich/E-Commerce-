@@ -1,6 +1,6 @@
 const Buyer = require('./Buyer');
 const Orders = require('./Orders');
-const Product = require('./Product');
+// const Product = require('./Product');
 const Seller = require('./Seller');
 const User = require('./User');
 

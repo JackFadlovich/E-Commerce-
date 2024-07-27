@@ -16,7 +16,6 @@ const Product = require("../../models/Product");
 
 router.post("/", async (req, res) => {
   const newProduct = Product.create({
-    product_id: "001",
     product_name: "PlaceHolder",
     category: "Tech",
     product_description: "Technology",
