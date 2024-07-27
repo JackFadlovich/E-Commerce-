@@ -1,7 +1,6 @@
 const Buyer = require('./Buyer');
-const Orders = require('./Orders');
+const Order = require('./Order');
 const Product = require('./Product');
-// const Product = require('./Product');
 const Seller = require('./Seller');
 const User = require('./User');
 
@@ -21,15 +20,15 @@ Seller.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-Buyer.hasMany(Orders, {
+Buyer.hasMany(Order, {
     foreignKey: 'buyer_id',
 });
 
-Orders.belongsTo(Buyer, {
+Order.belongsTo(Buyer, {
     foreignKey: 'buyer_id',
 });
 
 // Seller.belongsToMany(Product, { through: 'User_Profiles' });
 // Product.belongsToMany(Seller, { through: 'User_Profiles' });
 
-module.exports = Buyer, Orders, Product, Seller, User;
+module.exports = Buyer, Order, Product, Seller, User;

@@ -1,11 +1,11 @@
-const router = require("express").Router();
+const router = require('express').Router();
 
 const userRoutes = require('./userRoutes');
 const productRoutes = require('./productRoutes');
-const ordersRoutes = require('./ordersRoutes');
+const orderRoutes = require('./orderRoutes');
 
-router.use('/users', userRoutes);
-router.use('/products', productRoutes);
-router.use('/orders', ordersRoutes);
+router.use('/user', userRoutes);
+router.use('/product', productRoutes);
+router.use('/order', orderRoutes);
 
 module.exports = router;
