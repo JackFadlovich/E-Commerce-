@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const User = require('../../models/User');
 const Product = require("../../models/Product");
+const Orders = require('../../models/Orders');
 
 router.post('/', async (req, res) => {
     const newUser = User.create({
@@ -25,6 +26,13 @@ router.post("/", async (req, res) => {
     product_rating: "2",
   });
   res.json(newProduct);
+});
+
+router.post("/", async (req, res) => {
+    const newOrder = Orders.create({
+        shipping_info: "123 Road Ave",
+    });
+    res.json(newOrder);
 });
 
 module.exports = router;
