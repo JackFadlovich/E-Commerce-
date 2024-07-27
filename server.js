@@ -1,5 +1,6 @@
 const express = require("express");
 const sequelize = require("./config/connections");
+const controllers = require('./controllers');
 // const exphbs = require('express-handlebars');
 
 const app = express();
@@ -20,8 +21,10 @@ const model = require('./models');
 // const model = require('');
 // const model = require('');
 
+app.use(controllers);
+
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log("server started");
-  });
+  })
 });
