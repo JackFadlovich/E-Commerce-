@@ -21,6 +21,9 @@ const model = require('./models');
 // const model = require('');
 // const model = require('');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
+
 app.use(controllers);
 
 sequelize.sync().then(() => {
