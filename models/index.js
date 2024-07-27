@@ -1,5 +1,6 @@
 const Buyer = require('./Buyer');
 const Orders = require('./Orders');
+const Product = require('./Product');
 // const Product = require('./Product');
 const Seller = require('./Seller');
 const User = require('./User');
@@ -31,3 +32,4 @@ Orders.belongsTo(Buyer, {
 // Seller.belongsToMany(Product, { through: 'User_Profiles' });
 // Product.belongsToMany(Seller, { through: 'User_Profiles' });
 
+module.exports = Buyer, Orders, Product, Seller, User;
