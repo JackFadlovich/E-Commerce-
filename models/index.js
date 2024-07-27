@@ -28,3 +28,6 @@ Orders.belongsTo(Buyer, {
     foreignKey: 'buyer_id',
 });
 
+// Seller.belongsToMany(Product, { through: 'User_Profiles' });
+// Product.belongsToMany(Seller, { through: 'User_Profiles' });
+
