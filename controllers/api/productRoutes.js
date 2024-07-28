@@ -2,15 +2,18 @@ const router = require('express').Router();
 const Product = require('../../models/Product');
 
 router.post('/', async (req, res) => {
-    const newProduct = Product.create({
-      product_name: 'PlaceHolder',
-      category: 'Tech',
-      product_description: 'Technology',
-      price: '200',
-      manufacturer: 'Logitech',
-      product_rating: '2',
+  try {
+    const newProduct = await Product.create({
+      product_name: req.body.product_name,
+      category: req.body.category,
+      product_description: req.body.product_description,
+      price: req.body.price,
+      manufacturer: req.body.manufacturer,
     });
-    res.json(newProduct);
-  });
+    res.status(200).json(newProduct);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
-  module.exports = router;
+module.exports = router;

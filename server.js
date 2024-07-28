@@ -1,6 +1,6 @@
-const express = require("express");
-const sequelize = require("./config/connections");
-const controllers = require('./controllers');
+const express = require('express');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 // const exphbs = require('express-handlebars');
 
 const app = express();
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 
 //Calling in the models to create the databases
 const model = require('./models');
-// const model = require("./models/Buyer");
+// const model = require('./models/Buyer');
 // const model = require('');
 // const model = require('');
 // const model = require('');
@@ -24,10 +24,10 @@ const model = require('./models');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(controllers);
+app.use(routes);
 
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
-    console.log("server started");
+    console.log('server started');
   })
 });
