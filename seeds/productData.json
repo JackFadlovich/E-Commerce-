@@ -43,28 +43,28 @@
     },
     {
         "name": "HP DeskJet 2855e",
-        "category": "Printer",
+        "category": "Electronics",
         "description": "The DeskJet 2855e is perfect for homes printing to-do lists, letters, financial documents and recipes. Print speeds up to 5.5 ppm color, 7.5 ppm black.",
         "price": 59.99,
         "manufacturer": "HP"
     },
     {
         "name": "LG WM3555HVA 24 Inch Smart Front Load Washer/Dryer Combo",
-        "category": "Appliance",
+        "category": "Electronics",
         "description": "2.4 cu.ft. Capacity, 14 Programs, 13 Wash Options, 8 Dry Cycles, TurboWash™, Allergiene™ Cycle, Sanitize Cycle, Steam Refresh",
         "price": 1389.00,
         "manufacturer": "LG"
     },
     {
         "name": "BLACK and DECKER TO1787SS 4-Slice Crisp 'N Bake Air Fry Toaster Oven",
-        "category": "Appliance",
+        "category": "Electronics",
         "description": "5 Cooking Functions, 30 Minute Timer, Stainless Steel",
         "price": 39.96,
         "manufacturer": "Black and Decker"
     },
     {
         "name": "SAMSUNG Galaxy A15 5G A Series Cell Phone",
-        "category": "Cell Phone",
+        "category": "Electronics",
         "description": "128GB Unlocked Android Smartphone, AMOLED Display, Expandable Storage, Knox Security, Super Fast Charging, Hi-Res Camera, US Version, 2024, Blue Black",
         "price": 199.99,
         "manufacturer": "Samsung"
