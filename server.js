@@ -1,6 +1,6 @@
-const express = require("express");
-const sequelize = require("./config/connections");
-const controllers = require('./controllers');
+const express = require('express');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 // const exphbs = require('express-handlebars');
 
 const app = express();
@@ -24,7 +24,7 @@ const model = require('./models');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(controllers);
+app.use(routes);
 
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
