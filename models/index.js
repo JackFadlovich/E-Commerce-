@@ -53,4 +53,4 @@ Order.belongsTo(SellerProduct, {
   foreignKey: 'sellerproduct_id',
 });
 
-module.exports = User, Buyer, Seller, Product, SellerProduct, Order;
+module.exports = { User, Buyer, Seller, Product, SellerProduct, Order };
