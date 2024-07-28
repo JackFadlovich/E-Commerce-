@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const User = require('../../models/User');
+const Users = require('../../models/Users');
 
 router.post('/', async (req, res) => {
   try {
-    const newUser = await User.create({
+    const newUser = await Users.create({
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       phone_number: req.body.phone_number,

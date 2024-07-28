@@ -6,8 +6,6 @@
         "user_name": "Pscott",
         "email": "Pscott@gmail.com",
         "password": "12345"
-        
-
     },
     {
         "first_name": "Dean",
@@ -16,8 +14,6 @@
         "user_name": "impala67",
         "email": "babyimpala67@gmail.com",
         "password": "12345"
-        
-
     },
     {
         "first_name": "Naomi",
@@ -26,8 +22,6 @@
         "user_name": "smithn",
         "email": "naomismithn@yahoo.com",
         "password": "12345"
-        
-
     },
     {
         "first_name": "Lance",
@@ -36,7 +30,6 @@
         "user_name": "Lancepann",
         "email": "Lancepann@hotmail.com",
         "password": "12345"
-        
     },
     {
         "first_name": "Rayna",
@@ -45,6 +38,5 @@
         "user_name": "RCruzing",
         "email": "raynacruz28@gmail.com",
         "password": "12345"
-        
     }
 ]
