@@ -1,40 +1,40 @@
 [
     {
-        "firstName":"Penelope",
-        "lastName": "Scott",
-        "userName": "Pscott",
+        "first_name":"Penelope",
+        "last_name": "Scott",
+        "user_name": "Pscott",
         "email": "Pscott@gmail.com",
-        "phoneNumber": 3215552019
+        "phone_number": 3215552019
 
     },
     {
-        "firstName": "Dean",
-        "lastName": "Winchester",
-        "userName": "impala67",
+        "first_name": "Dean",
+        "last_name": "Winchester",
+        "user_name": "impala67",
         "email": "babyimpala67@gmail.com",
-        "phoneNumber": 7855554567
+        "phone_number": 7855554567
 
     },
     {
-        "firstName": "Naomi",
-        "lastName": "Smith",
-        "userName": "smithn",
+        "first_name": "Naomi",
+        "last_name": "Smith",
+        "user_name": "smithn",
         "email": "naomismithn@yahoo.com",
-        "phoneNumber": 2315553489
+        "phone_number": 2315553489
 
     },
     {
-        "firstName": "Lance",
-        "lastName": "Pan",
-        "userName": "Lancepann",
+        "first_name": "Lance",
+        "last_name": "Pan",
+        "user_name": "Lancepann",
         "email": "Lancepann@hotmail.com",
-        "phoneNumber": 5165559098
+        "phone_number": 5165559098
     },
     {
-        "firstName": "Rayna",
-        "lastName": "Cruz",
-        "userName": "RCruzing",
+        "first_name": "Rayna",
+        "last_name": "Cruz",
+        "user_name": "RCruzing",
         "email": "raynacruz28@gmail.com",
-        "phoneNumber": 9195556782
+        "phone_number": 9195556782
     }
 ]
