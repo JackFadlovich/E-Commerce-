@@ -14,12 +14,15 @@ const PORT = process.env.PORT || 3001;
 // app.set('view engine', 'handlebars');
 
 //Calling in the models to create the databases
-// const model = require('./models');
+const model = require('./models');
 // const model = require("./models/Buyer");
 // const model = require('');
 // const model = require('');
 // const model = require('');
 // const model = require('');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(controllers);
 

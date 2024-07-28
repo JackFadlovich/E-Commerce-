@@ -1,17 +1,11 @@
-const router = require("express").Router();
-const User = require('../../models/User');
+const router = require('express').Router();
 
-router.post('/', async (req, res) => {
-    const newUser = User.create({
-        first_name: 'John',
-        last_name: 'Doe',
-        phone_number: '1234567890',
-        user_name: 'JohnDoe',
-        email: 'johndoe@gmail.com',
-        password: 'john'
-    });
+const userRoutes = require('./userRoutes');
+const productRoutes = require('./productRoutes');
+const orderRoutes = require('./orderRoutes');
 
-    res.json(newUser);
-});
+router.use('/user', userRoutes);
+router.use('/product', productRoutes);
+router.use('/order', orderRoutes);
 
 module.exports = router;

@@ -4,9 +4,7 @@
         "lastName": "Scott",
         "userName": "Pscott",
         "email": "Pscott@gmail.com",
-        "phoneNumber": 3215552019,
-        "buyerRating": 4,
-        "sellerRating": 3
+        "phoneNumber": 3215552019
 
     },
     {
@@ -14,9 +12,7 @@
         "lastName": "Winchester",
         "userName": "impala67",
         "email": "babyimpala67@gmail.com",
-        "phoneNumber": 7855554567,
-        "buyerRating": 5,
-        "sellerRating": 2
+        "phoneNumber": 7855554567
 
     },
     {
@@ -24,9 +20,7 @@
         "lastName": "Smith",
         "userName": "smithn",
         "email": "naomismithn@yahoo.com",
-        "phoneNumber": 2315553489,
-        "buyerRating": 5,
-        "sellerRating": 5
+        "phoneNumber": 2315553489
 
     },
     {
@@ -34,17 +28,13 @@
         "lastName": "Pan",
         "userName": "Lancepann",
         "email": "Lancepann@hotmail.com",
-        "phoneNumber": 5165559098,
-        "buyerRating": 1,
-        "sellerRating": 0
+        "phoneNumber": 5165559098
     },
     {
         "firstName": "Rayna",
         "lastName": "Cruz",
         "userName": "RCruzing",
         "email": "raynacruz28@gmail.com",
-        "phoneNumber": 9195556782,
-        "buyerRating": 4,
-        "sellerRating": 3
+        "phoneNumber": 9195556782
     }
 ]
