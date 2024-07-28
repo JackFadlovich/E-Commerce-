@@ -3,21 +3,21 @@ const Order = require('./Order');
 const Product = require('./Product');
 const Seller = require('./Seller');
 const SellerProduct = require('./SellerProduct');
-const User = require('./User');
+const Users = require('./Users');
 
-User.hasMany(Buyer, {
+Users.hasMany(Buyer, {
   foreignKey: 'user_id',
 });
 
-Buyer.belongsTo(User, {
+Buyer.belongsTo(Users, {
   foreignKey: 'user_id',
 });
 
-User.hasMany(Seller, {
+Users.hasMany(Seller, {
   foreignKey: 'user_id',
 });
 
-Seller.belongsTo(User, {
+Seller.belongsTo(Users, {
   foreignKey: 'user_id',
 });
 
@@ -53,4 +53,4 @@ Order.belongsTo(SellerProduct, {
   foreignKey: 'sellerproduct_id',
 });
 
-module.exports = { User, Buyer, Seller, Product, SellerProduct, Order };
+module.exports = { Users, Buyer, Seller, Product, SellerProduct, Order };

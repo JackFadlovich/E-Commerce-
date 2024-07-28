@@ -15,7 +15,7 @@ Seller.init(
     user_id: {
       type: DataTypes.INTEGER,
       reference: {
-        model: 'user',
+        model: 'users',
         key: 'id',
       },
     },
