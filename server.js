@@ -22,7 +22,7 @@ const model = require('./models');
 // const model = require('');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 app.use(controllers);
 
