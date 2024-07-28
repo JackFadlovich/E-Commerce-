@@ -46,16 +46,6 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-
-    buyer_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-    },
-
-   seller_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-    },
    
     password: {
       type: DataTypes.STRING,

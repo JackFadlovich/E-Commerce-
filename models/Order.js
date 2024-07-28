@@ -24,6 +24,22 @@ Order.init(
                 key: 'id',
             },
         },
+
+        product_id: {
+            type: DataTypes.INTEGER,
+            reference: {
+                model: 'seller_product',
+                key: 'product_id',
+            },
+        },
+
+        seller_id: {
+            type: DataTypes.INTEGER,
+            reference: {
+                model: 'seller_product',
+                key: 'seller_id',
+            },
+        },
     },
     {
         sequelize,

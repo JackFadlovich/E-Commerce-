@@ -31,10 +31,6 @@ Product.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        product_rating: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
     },
     {
         sequelize,
