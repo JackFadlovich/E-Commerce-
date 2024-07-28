@@ -2,39 +2,49 @@
     {
         "first_name":"Penelope",
         "last_name": "Scott",
+        "phone_number": 3215552019,
         "user_name": "Pscott",
         "email": "Pscott@gmail.com",
-        "phone_number": 3215552019
+        "password": "12345"
+        
 
     },
     {
         "first_name": "Dean",
         "last_name": "Winchester",
+        "phone_number": 7855554567,
         "user_name": "impala67",
         "email": "babyimpala67@gmail.com",
-        "phone_number": 7855554567
+        "password": "12345"
+        
 
     },
     {
         "first_name": "Naomi",
         "last_name": "Smith",
+        "phone_number": 2315553489,
         "user_name": "smithn",
         "email": "naomismithn@yahoo.com",
-        "phone_number": 2315553489
+        "password": "12345"
+        
 
     },
     {
         "first_name": "Lance",
         "last_name": "Pan",
+        "phone_number": 5165559098,
         "user_name": "Lancepann",
         "email": "Lancepann@hotmail.com",
-        "phone_number": 5165559098
+        "password": "12345"
+        
     },
     {
         "first_name": "Rayna",
         "last_name": "Cruz",
+        "phone_number": 9195556782,
         "user_name": "RCruzing",
         "email": "raynacruz28@gmail.com",
-        "phone_number": 9195556782
+        "password": "12345"
+        
     }
 ]

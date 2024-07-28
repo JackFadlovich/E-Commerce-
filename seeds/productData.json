@@ -35,72 +35,72 @@
         "manufacturer": "Skull Shaver"
     },
     {
-        "name": "Anker USB-C Charger (2-pack)",
+        "product_name": "Anker USB-C Charger (2-pack)",
         "category": "Electronics",
-        "description": "20W High-Speed Charging: Enjoy fast charging with 20W max output for your iPhone, Samsung phones, and other devices.",
+        "product_description": "20W High-Speed Charging: Enjoy fast charging with 20W max output for your iPhone, Samsung phones, and other devices.",
         "price": 18.99,
         "manufacturer": "Anker"
     },
     {
-        "name": "HP DeskJet 2855e",
+        "product_name": "HP DeskJet 2855e",
         "category": "Electronics",
-        "description": "The DeskJet 2855e is perfect for homes printing to-do lists, letters, financial documents and recipes. Print speeds up to 5.5 ppm color, 7.5 ppm black.",
+        "product_description": "The DeskJet 2855e is perfect for homes printing to-do lists, letters, financial documents and recipes. Print speeds up to 5.5 ppm color, 7.5 ppm black.",
         "price": 59.99,
         "manufacturer": "HP"
     },
     {
-        "name": "LG WM3555HVA 24 Inch Smart Front Load Washer/Dryer Combo",
+        "product_name": "LG WM3555HVA 24 Inch Smart Front Load Washer/Dryer Combo",
         "category": "Electronics",
-        "description": "2.4 cu.ft. Capacity, 14 Programs, 13 Wash Options, 8 Dry Cycles, TurboWash™, Allergiene™ Cycle, Sanitize Cycle, Steam Refresh",
+        "product_description": "2.4 cu.ft. Capacity, 14 Programs, 13 Wash Options, 8 Dry Cycles, TurboWash™, Allergiene™ Cycle, Sanitize Cycle, Steam Refresh",
         "price": 1389.00,
         "manufacturer": "LG"
     },
     {
-        "name": "BLACK and DECKER TO1787SS 4-Slice Crisp 'N Bake Air Fry Toaster Oven",
+        "product_name": "BLACK and DECKER TO1787SS 4-Slice Crisp 'N Bake Air Fry Toaster Oven",
         "category": "Electronics",
-        "description": "5 Cooking Functions, 30 Minute Timer, Stainless Steel",
+        "product_description": "5 Cooking Functions, 30 Minute Timer, Stainless Steel",
         "price": 39.96,
         "manufacturer": "Black and Decker"
     },
     {
-        "name": "SAMSUNG Galaxy A15 5G A Series Cell Phone",
+        "product_name": "SAMSUNG Galaxy A15 5G A Series Cell Phone",
         "category": "Electronics",
-        "description": "128GB Unlocked Android Smartphone, AMOLED Display, Expandable Storage, Knox Security, Super Fast Charging, Hi-Res Camera, US Version, 2024, Blue Black",
+        "product_description": "128GB Unlocked Android Smartphone, AMOLED Display, Expandable Storage, Knox Security, Super Fast Charging, Hi-Res Camera, US Version, 2024, Blue Black",
         "price": 199.99,
         "manufacturer": "Samsung"
     },
     {
-        "name": "Dell Inspiron 3020 Desktop",
+        "product_name": "Dell Inspiron 3020 Desktop",
         "category": "Electronics",
-        "description": "Intel Core i7-13700, 1TB SSD + 1TB HDD, 16GB DDR4 RAM, DVD RW, Intel UHD 770 Graphics, Windows 11 Pro - Mist Blue",
+        "product_description": "Intel Core i7-13700, 1TB SSD + 1TB HDD, 16GB DDR4 RAM, DVD RW, Intel UHD 770 Graphics, Windows 11 Pro - Mist Blue",
         "price": 893.98,
         "manufacturer": "Dell"
     },
     {
-        "name": "Flamaker Futon Sofa Bed",
+        "product_name": "Flamaker Futon Sofa Bed",
         "category": "Home",
-        "description": "Modern Folding Futon Set Faux Leather Convertible Recliner Lounge for Living Room with 2 Cup Holders, Removable Armrests (Faux Leather, Black)",
+        "product_description": "Modern Folding Futon Set Faux Leather Convertible Recliner Lounge for Living Room with 2 Cup Holders, Removable Armrests (Faux Leather, Black)",
         "price": 149.99,
         "manufacturer": "Flamaker"
     },
     {
-        "name": "ZINUS 12 Inch Foam and Spring Hybrid Mattress",
+        "product_name": "ZINUS 12 Inch Foam and Spring Hybrid Mattress",
         "category": "Home",
-        "description": "Queen, Fiberglass Free, Medium Firmness, Durable Support, Certified Safe Foams & Fabric, Mattress in A Box",
+        "product_description": "Queen, Fiberglass Free, Medium Firmness, Durable Support, Certified Safe Foams & Fabric, Mattress in A Box",
         "price": 297.66,
         "manufacturer": "ZINUS"
     },
     {
-        "name": "Keychron K10 Pro Wireless Custom Mechanical Keyboard",
+        "product_name": "Keychron K10 Pro Wireless Custom Mechanical Keyboard",
         "category": "Electronics",
-        "description": "QMK/VIA Programmable Bluetooth/Wired White Backlight, Hot-swappable Keychron K Pro Brown Switch - For Mac Windows Linux",
+        "product_description": "QMK/VIA Programmable Bluetooth/Wired White Backlight, Hot-swappable Keychron K Pro Brown Switch - For Mac Windows Linux",
         "price": 104.99,
         "manufacturer": "Keychron"
     },
     {
-        "name": "SAMSUNG 55-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV",
+        "product_name": "SAMSUNG 55-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV",
         "category": "Electronics",
-        "description": "Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN55DU7200, 2024 Model)",
+        "product_description": "Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN55DU7200, 2024 Model)",
         "price": 377.99,
         "manufacturer": "SAMSUNG"
     }

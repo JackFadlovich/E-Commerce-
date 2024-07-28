@@ -10,10 +10,10 @@ const seedDatabase = async () => {
 
   await Product.bulkCreate(productData);
 
-//    await User.build(userData, {
-//     individualHooks: true,
-//     returning: true,
-//    });
+   await User.build(userData, {
+    individualHooks: true,
+    returning: true,
+   });
 
 
    process.exit(0);
