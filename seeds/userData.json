@@ -1,50 +1,42 @@
 [
     {
-        "firstName":"Penelope",
-        "lastName": "Scott",
-        "userName": "Pscott",
+        "first_name":"Penelope",
+        "last_name": "Scott",
+        "phone_number": 3215552019,
+        "user_name": "Pscott",
         "email": "Pscott@gmail.com",
-        "phoneNumber": 3215552019,
-        "buyerRating": 4,
-        "sellerRating": 3
-
+        "password": "12345"
     },
     {
-        "firstName": "Dean",
-        "lastName": "Winchester",
-        "userName": "impala67",
+        "first_name": "Dean",
+        "last_name": "Winchester",
+        "phone_number": 7855554567,
+        "user_name": "impala67",
         "email": "babyimpala67@gmail.com",
-        "phoneNumber": 7855554567,
-        "buyerRating": 5,
-        "sellerRating": 2
-
+        "password": "12345"
     },
     {
-        "firstName": "Naomi",
-        "lastName": "Smith",
-        "userName": "smithn",
+        "first_name": "Naomi",
+        "last_name": "Smith",
+        "phone_number": 2315553489,
+        "user_name": "smithn",
         "email": "naomismithn@yahoo.com",
-        "phoneNumber": 2315553489,
-        "buyerRating": 5,
-        "sellerRating": 5
-
+        "password": "12345"
     },
     {
-        "firstName": "Lance",
-        "lastName": "Pan",
-        "userName": "Lancepann",
+        "first_name": "Lance",
+        "last_name": "Pan",
+        "phone_number": 5165559098,
+        "user_name": "Lancepann",
         "email": "Lancepann@hotmail.com",
-        "phoneNumber": 5165559098,
-        "buyerRating": 1,
-        "sellerRating": 0
+        "password": "12345"
     },
     {
-        "firstName": "Rayna",
-        "lastName": "Cruz",
-        "userName": "RCruzing",
+        "first_name": "Rayna",
+        "last_name": "Cruz",
+        "phone_number": 9195556782,
+        "user_name": "RCruzing",
         "email": "raynacruz28@gmail.com",
-        "phoneNumber": 9195556782,
-        "buyerRating": 4,
-        "sellerRating": 3
+        "password": "12345"
     }
 ]

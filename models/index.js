@@ -1,30 +1,56 @@
 const Buyer = require('./Buyer');
-const Orders = require('./Orders');
+const Order = require('./Order');
 const Product = require('./Product');
 const Seller = require('./Seller');
-const User = require('./User');
+const SellerProduct = require('./SellerProduct');
+const Users = require('./Users');
 
-User.hasMany(Buyer, {
-    foreignKey: 'user_id',
+Users.hasMany(Buyer, {
+  foreignKey: 'user_id',
 });
 
-Buyer.belongsTo(User, {
-    foreignKey: 'user_id',
+Buyer.belongsTo(Users, {
+  foreignKey: 'user_id',
 });
 
-User.hasMany(Seller, {
-    foreignKey: 'user_id',
+Users.hasMany(Seller, {
+  foreignKey: 'user_id',
 });
 
-Buyer.belongsTo(Seller, {
-    foreignKey: 'user_id',
+Seller.belongsTo(Users, {
+  foreignKey: 'user_id',
 });
 
-Buyer.hasMany(Orders, {
-    foreignKey: 'buyer_id',
+Seller.hasMany(SellerProduct, {
+    foreignKey: 'seller_id',
 });
 
-Orders.belongsTo(Buyer, {
-    foreignKey: 'buyer_id',
+SellerProduct.belongsTo(Seller, {
+    foreignKey: 'seller_id',
 });
 
+Product.hasMany(SellerProduct, {
+    foreignKey: 'product_id',
+});
+
+SellerProduct.belongsTo(Product, {
+    foreignKey: 'product_id',
+});
+
+Buyer.hasMany(Order, {
+  foreignKey: 'buyer_id',
+});
+
+Order.belongsTo(Buyer, {
+  foreignKey: 'buyer_id',
+});
+
+SellerProduct.hasMany(Order, {
+  foreignKey: 'sellerproduct_id',
+});
+
+Order.belongsTo(SellerProduct, {
+  foreignKey: 'sellerproduct_id',
+});
+
+module.exports = { Users, Buyer, Seller, Product, SellerProduct, Order };

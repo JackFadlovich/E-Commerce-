@@ -1,21 +1,34 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Buyer extends Model {}
+class Order extends Model {}
 
-Buyer.init(
+Order.init(
   {
-    buyer_id: {
+    order_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
 
-    user_id: {
+    shipping_info: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
+    buyer_id: {
       type: DataTypes.INTEGER,
       reference: {
-        model: 'users',
+        model: 'buyer',
+        key: 'id',
+      },
+    },
+
+    sellerproduct_id: {
+      type: DataTypes.INTEGER,
+      reference: {
+        model: 'sellerproduct',
         key: 'id',
       },
     },
@@ -25,8 +38,8 @@ Buyer.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'buyer',
+    modelName: 'order',
   }
 );
 
-module.exports = Buyer;
+module.exports = Order;

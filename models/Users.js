@@ -1,15 +1,14 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const sequelize = require('./config/connection');
+const sequelize = require('../config/connection');
 
-class User extends Model 
-{
+class Users extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-User.init(
+Users.init(
   {
     user_id: {
       type: DataTypes.INTEGER,
@@ -17,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-   
+
     first_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,11 +27,16 @@ User.init(
       allowNull: false,
     },
 
+    phone_number: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+    },
+
     user_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-   
+
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -42,45 +46,32 @@ User.init(
       },
     },
 
-    phone_number: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-
-    buyer_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-    },
-
-   seller_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-    },
-   
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      },
     },
+  },
   {
-    hooks: 
-    {
-      beforeCreate: async (newUserData) => 
-        {
+    hooks: {
+      beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
-      
-      beforeUpdate: async (updatedUserData) => 
-        {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+
+      beforeUpdate: async (updatedUserData) => {
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
         return updatedUserData;
       },
     },
-    
     sequelize,
-    modelName: 'user',
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'users',
   }
 );
 
-module.exports = User;
+module.exports = Users;
