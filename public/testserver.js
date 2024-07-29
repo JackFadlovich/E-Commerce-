@@ -23,3 +23,10 @@ app.use(express.urlencoded({ extended: true }));
 const authRoutes = require("../controllers/authRoutes"); 
 app.use("/auth", authRoutes);
 
+// Finalize server sync and start
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => {
+        console.log("Test server started");
+    });
+});
+
