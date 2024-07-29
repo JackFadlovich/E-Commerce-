@@ -19,3 +19,7 @@ const sess = {
 app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const authRoutes = require("../controllers/authRoutes"); 
+app.use("/auth", authRoutes);
+
