@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items for sale</title>
+    <title>Items for Sale</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <h1>Items for Sale</h1>
-    <div id="box-grid"></div>
+    <div id="box-grid">
+        {{#each products}}
+            <div class="box">
+                <p>ID: {{product_id}}</p>
+                <p>Name: {{product_name}}</p>
+                <p>Category: {{category}}</p>
+                <p>Description: {{product_description}}</p>
+                <p>Price: {{price}}</p>
+                <p>Manufacturer: {{manufacturer}}</p>
+            </div>
+        {{/each}}
+    </div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="/js/scripts.js"></script>
