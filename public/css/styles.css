@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional: light background color */
+}
+
+#box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    grid-gap: 10px; /* Space between boxes */
+    width: 90vw; /* Adjust to fit your layout */
+    max-width: 1200px; /* Optional: limit the maximum width */
+    padding: 20px; /* Optional: padding around the grid */
+}
+
+.box {
+    width: 300px; /* Adjust the width */
+    height: 300px; /* Adjust the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 20px; /* Adjust text size */
+    text-align: center; /* Center text inside the box */
+}
+
+.box p {
+    margin: 0;
+    padding: 0;
+}
