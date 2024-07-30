@@ -1,30 +1,33 @@
-<html lang="en">    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerse</title>
-    <link rel="stylesheet" href="/css/jass.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<body>
-    <nav>
+  <body>
+    <div>
+      <header>
+        Test
+      </header>
+      <nav>
         {{#if logged_in}}
-        <a href="/homepage">Home</a>        
+          <a href="/homepage">Home</a>
         {{else}}
-        <a href="/login">Login</a>
-        {{/if}} 
-    </nav>
-    <main>
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+      <main>
         {{{body}}}
-    </main>
+      </main>
 
-    <footer>
+      <footer>
 
-    </footer>
-
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+      </footer>
+    </div>
     <script src="/js/scripts.js"></script>
-</body>
+  </body>
 
 </html>
