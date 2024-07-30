@@ -1,16 +1,9 @@
 const router = require("express").Router();
-const { Product, Seller } = require("../models");
+const { Product } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
-    const allProducts = await Product.findAll({
-      include: [
-        {
-          model: Seller,
-          attributes: ["seller_id"],
-        },
-      ],
-    });
+    const allProducts = await Product.findAll({});
 
     const products = allProducts.map((product) => product.get({ plain: true }));
 
