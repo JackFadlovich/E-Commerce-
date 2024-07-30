@@ -16,6 +16,22 @@ router.get("/", async (req, res) => {
   }
 });
 
+//Get all products
+router.get("/product", async (req, res) => {
+  try {
+    const allProducts = await Product.findAll({});
+    console.log("Im working");
+
+    const products = allProducts.map((product) => product.get({ plain: true})); 
+
+    res.render('product', {
+      products,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/profile');
