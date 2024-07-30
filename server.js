@@ -6,7 +6,6 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const helpers = require('./utils/helpers.js');
-const profileRoutes = require('./controllers/api/profileRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -27,7 +26,6 @@ const sess = {
 };
 
 app.use(session(sess));
-app.use('/profile', profileRoutes);
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
@@ -40,7 +38,6 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(require('./controllers/api/productRoutes'));
 // Use the routes defined in controllers
 app.use(routes);
 
