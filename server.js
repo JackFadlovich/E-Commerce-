@@ -20,9 +20,9 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./controllers/api/productRoutes'));
+// app.use(require('./controllers/api/productRoutes'));
 // Use the routes defined in controllers
-// app.use(routes);
+app.use(routes);
 
 sequelize.sync().then(() => {
   app.listen(PORT, () => {

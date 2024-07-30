@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items for Sale</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <style>
-        .login-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-    <button class="login-button" onclick="window.location.href='/login'">Log In</button>
-    <h1>Items for Sale</h1>
-    <div id="box-grid">
-        {{#each products}}
-            <div class="box">
-                <p>ID: {{product_id}}</p>
-                <p>Name: {{product_name}}</p>
-                <p>Category: {{category}}</p>
-                <p>Description: {{product_description}}</p>
-                <p>Price: {{price}}</p>
-                <p>Manufacturer: {{manufacturer}}</p>
-            </div>
-        {{/each}}
-    </div>
-
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="/js/scripts.js"></script>
-</body>
-</html>
+{{#each products as |product|}}
+<div class="main-card">
+    <div class="main-card-header">
+        {{category}}
+    </div> 
+</div>
+{{/each}}

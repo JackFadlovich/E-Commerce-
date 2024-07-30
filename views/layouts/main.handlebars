@@ -1,20 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerse</title>
-    <link rel="stylesheet" href="/css/jass.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Peer2Peer Commerse</title>
+    <link rel="stylesheet" type="text/css" href="/css/jass.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
 
   <body>
-    <div>
       <header>
-        Test
+        <h1><a href="/">Peer2Peer Commerse</a></h1>
       </header>
       <nav>
         {{#if logged_in}}
-          <a href="/homepage">Home</a>
+          <a href="/users">{{user_name}}</a> | <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
           <a href="/login">Login</a>
         {{/if}}
@@ -22,12 +23,9 @@
       <main>
         {{{body}}}
       </main>
-
-      <footer>
-
-      </footer>
-    </div>
-    <script src="/js/scripts.js"></script>
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
   </body>
 
 </html>
