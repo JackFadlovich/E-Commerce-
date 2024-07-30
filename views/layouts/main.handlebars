@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peer2Peer Commerse</title>
+    <link rel="stylesheet" type="text/css" href="/css/jass.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+
+  <body>
+      <header>
+        <h1><a href="/">Peer2Peer Commerse</a></h1>
+      </header>
+      <nav>
+        {{#if logged_in}}
+          <a href="/users">{{user_name}}</a> | <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+      <main>
+        {{{body}}}
+      </main>
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>

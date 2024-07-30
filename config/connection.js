@@ -13,6 +13,7 @@ if (process.env.DB_URL) {
     {
       host: 'localhost',
       dialect: 'postgres',
+      // port: 3001
     }
   );
 }

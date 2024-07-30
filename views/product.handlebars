@@ -1,0 +1,36 @@
+{{#each products as |product|}}
+  <div class="main-card">
+    <div class="main-card-header">
+      {{product_name}}
+    </div>
+    <div class="card-body">
+      <p>
+        <h3>
+          Description
+        </h3>
+        {{product_description}}
+      </p>
+      <p>
+        <h3>
+          Category
+        </h3>
+        {{category}}
+      </p>
+      <p>
+        <h3>
+          Manufacturer
+        </h3>
+        {{manufacturer}}
+      </p>
+      <p>
+        <h3>
+          Price
+        </h3>
+        ${{price}}.00
+      </p>
+      <div class="purchase-btn"> 
+        <button class="btn btn-primary" type="submit" id="purchaseButton">Purchase</button>
+      </div>
+    </div>
+  </div>
+{{/each}}
