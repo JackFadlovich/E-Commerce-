@@ -6,16 +6,18 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-    <main>
-        {{{body}}}
-    </main>
-    {{!-- <nav>
+<body>
+    <nav>
         {{#if logged_in}}
-        <a href="/views/index.handlebars">Products</a>
+        <a href="/homepage">Products</a>        
         {{else}}
-        <a href="/views/layouts/login.handlebars"></a>
-        {{/if}} --}}
+        <a href="/login">login</a>
+        {{/if}} 
     </nav>
+    <main>
+        {{{ body }}}
+    </main>
+
     <footer>
         <p>&copy; bootcamp project</p>
     </footer>
