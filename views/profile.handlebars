@@ -1,32 +1,30 @@
 <h1>Add a New Product</h1>
+<div>
 <form id="add-product-form">
-  <div>
+  <div class="form-group">
     <label for="product_name">Product Name:</label>
-    <input type="text" id="product_name" name="product_name" required>
+    <input class="form-input" type="text" id="product_name">
   </div>
-  
-  <div>
-    <label for="product_description">Description:</label>
-    <textarea id="product_description" name="product_description" required></textarea>
-  </div>
-
-  <div>
+  <div class="form-group">
     <label for="category">Category:</label>
-    <input type="text" id="category" name="category" required>
+    <input class="form-input" type="text" id="category">
   </div>
-  
-  <div>
-    <label for="manufacturer">Manufacturer:</label>
-    <input type="text" id="manufacturer" name="manufacturer" required>
+  <div class="form-group">
+    <label for="product_description">Description:</label>
+    <textarea class="form-input" id="product_description"></textarea>
   </div>
-  
-  <div>
+  <div class="form-group">
     <label for="price">Price:</label>
-    <input type="number" id="price" name="price" step="0.01" required>
+    <input class="form-input" type="number" id="price">
+  </div>
+  <div class="form-group">
+    <label for="manufacturer">Manufacturer:</label>
+    <input class="form-input" type="text" id="manufacturer">
   </div>
   
   <div>
-    <button type="submit">Add Product</button>
+    <button class="btn btn-primary" type="submit">Add Product</button>
   </div>
 </form>
+</div>
 <script src="/js/profile.js"></script>
