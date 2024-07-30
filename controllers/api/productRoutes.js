@@ -13,16 +13,20 @@ router.get("/", async (req, res) => {
 });
 
 // Get one product by name
-// router.get("/:category", async (req, res) => {
+router.get("/:category", async (req, res) => {
+  Product.findByPk(req.params.category).then((productData) => {
+    res.json(productData);
+  });
+});
 //   try {
 //     const oneProductData = await Product.findByPk(req.params.category);
-//     if (!oneProductData) {
-//       res.status(404).json({ message: "No Product found!" });
-//       return;
-//     }
-//     res.status(200).json(oneProductData);
-//   } catch (err) {
-//     res.status(500).json(err);
+//   //   if (!oneProductData) {
+//   //     res.status(404).json({ message: "No Product found!" });
+//   //     return;
+//   //   }
+//   //   res.status(200).json(oneProductData);
+//   // } catch (err) {
+//   //   res.status(500).json(err);
 //   }
 // });
 
