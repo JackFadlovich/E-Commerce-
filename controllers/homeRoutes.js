@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Product } = require("../models");
+const { Product, Seller, Buyer, Order, Users, SellerProduct  } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
@@ -26,6 +26,17 @@ router.get("/product", async (req, res) => {
 
     res.render('product', {
       products,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/profile', async (req, res) => {
+  try {
+
+    res.render('profile', {
+
     });
   } catch (err) {
     res.status(500).json(err);
