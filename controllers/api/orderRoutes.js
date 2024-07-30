@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const Order = require('../../models/Order');
+const { Order } = require("../../models");
 
-router.get('/', async (req, res) => {
+router.get('/order', async (req, res) => {
   try {
     const allOrders = await Order.findAll();
     console.log('all orders');

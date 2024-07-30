@@ -1,12 +1,17 @@
 const router = require("express").Router();
-const Product = require("../../models/Product");
+const { Product } = require("../../models");
 
 //Get all products
 router.get("/", async (req, res) => {
   try {
-    const allProducts = await Product.findAll();
+    const allProducts = await Product.findAll({});
     console.log("Im working");
-    res.status(200).json(allProducts);
+
+    const products = allProducts.map((product) => product.get({ plain: true})); 
+
+    res.render('product', {
+      products,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
