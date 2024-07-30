@@ -4,7 +4,7 @@ const Seller = require("../../models/Seller");
 router.post("/", async (req, res) => {
   try {
     const newSeller = await Seller.create({
-      user_id: localStorage.getItem('user_id'),
+      user_id: localStorage.getItem("user_id"),
     });
     res.status(200).json(newSeller);
   } catch (err) {
