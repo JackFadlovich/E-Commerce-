@@ -38,7 +38,7 @@ router.get('/profile', async (req, res) => {
   try {
     const profileData = await Users.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Product, SellerProduct, Buyer, Order }]
+      include: [{ model: Product, SellerProduct, Seller, Buyer, Order }]
     });
 
     const profile = profileData.get({ plain: true });

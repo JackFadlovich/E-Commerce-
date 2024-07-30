@@ -8,7 +8,7 @@ document.querySelector('#add-product-form').addEventListener('submit', async (ev
     const manufacturer = document.querySelector('#manufacturer').value.trim();
     
   
-    if (product_name && product_description && category && manufacturer && price) {
+    if (product_name && category && product_description && price && manufacturer) {
       const response = await fetch('/products', {
         method: 'POST',
         body: JSON.stringify({
