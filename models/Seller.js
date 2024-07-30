@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Seller extends Model {}
 
@@ -15,8 +15,8 @@ Seller.init(
     user_id: {
       type: DataTypes.INTEGER,
       reference: {
-        model: 'users',
-        key: 'id',
+        model: "users",
+        key: "id",
       },
     },
   },
@@ -25,7 +25,7 @@ Seller.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'seller',
+    modelName: "seller",
   }
 );
 

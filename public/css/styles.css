@@ -62,7 +62,7 @@
     background-color: #ebebeb;
   }
   
-  .add-dish-container {
+  .add-main-container {
     display: flex;
     flex-wrap: wrap;
     width: 35%;
@@ -80,7 +80,7 @@
     background-color: var(--tertiary);
   }
   
-  .edit-dish-container {
+  .edit-main-container {
     display: flex;
     flex-wrap: wrap;
     width: 35%;
@@ -99,7 +99,7 @@
   }
   
   /* CARDS */
-  .dish-card {
+  .main-card {
     margin: 20px;
     flex: 0 1 300px;
     padding: 5px;
@@ -141,7 +141,7 @@
     color: var(--error)
   }
 
-  .dish-card-header {
+  .main-card-header {
     font-size: 1.5rem;
     color: var(--tertiary);
     margin: 0;
