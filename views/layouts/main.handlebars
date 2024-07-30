@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-    
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>Ecommerse</title>
+    <link rel="stylesheet" href="/css/jass.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
     <nav>
         {{#if logged_in}}
-        <a href="/homepage">Products</a>        
+        <a href="/homepage">Home</a>        
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}} 
     </nav>
     <main>
-        {{{ body }}}
+        {{{body}}}
     </main>
 
     <footer>
-        <p>&copy; bootcamp project</p>
+
     </footer>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
