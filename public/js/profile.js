@@ -6,6 +6,7 @@ document.querySelector('#add-product-form').addEventListener('submit', async (ev
     const product_description = document.querySelector('#product_description').value.trim();
     const price = document.querySelector('#price').value.trim();
     const manufacturer = document.querySelector('#manufacturer').value.trim();
+    
   
     if (product_name && category && product_description && price && manufacturer) {
       const response = await fetch('/products', {
